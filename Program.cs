@@ -19,22 +19,17 @@ namespace ExamMS98361.Console
             //System.Console.WriteLine($"El area del rectangulo es {area}");
             //System.Console.ReadLine();
 
-            rect.Changed += R_Changed;
-            rect.Length = 12;
+            //rect.Changed += R_Changed;
+            //rect.Length = 12;
 
-            events.changes += R_CustomChanges;
-            events.Name = "Tony";
+            //events.changes += R_CustomChanges;
+            events.Name = " ";
 
             System.Console.ReadLine();
 
 
         }
-        public static void R_CustomChanges(object sender, EventArgs e)
-        {
-            CustomEvents custom = (CustomEvents)sender;
-            System.Console.WriteLine($"El Valor Introducido es {custom.Name}");
 
-        }
         public static void R_Changed(object sender, EventArgs e)
         {
             Rectangle r = (Rectangle)sender;

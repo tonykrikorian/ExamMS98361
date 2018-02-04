@@ -20,17 +20,32 @@ namespace ExamMS98361.Console
             }
             set
             {
-                if (!string.IsNullOrEmpty(value))
+                if (!string.IsNullOrWhiteSpace(value))
                 {
+                    changes += R_CustomChanges;
                     name = value;
                     this.changes(this, EventArgs.Empty);
                 }
                 else
                 {
-                    this.changes(this, EventArgs.Empty);
+                    changes += ErrorEventHander;
+                    changes(this, EventArgs.Empty);
                 }
                 
             }
+        }
+
+        public void ErrorEventHander(object sender, EventArgs e)
+        {
+            CustomEvents r = (CustomEvents)sender;
+
+            System.Console.WriteLine($"Valor {r.Name} es invalido");
+        }
+
+        public void R_CustomChanges(object sender, EventArgs e)
+        {
+            CustomEvents custom = (CustomEvents)sender;
+            System.Console.WriteLine($"El Valor Introducido es {custom.Name}");
         }
     }
 }

@@ -5,3 +5,7 @@ C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS9836
 C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.csproj.CoreCompileInputs.cache
 C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.exe
 C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.pdb
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\EntityFramework.dll
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\EntityFramework.xml
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\EntityFramework.SqlServer.xml

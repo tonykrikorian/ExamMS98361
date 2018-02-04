@@ -51,5 +51,7 @@ namespace ExamMS98361.Console
         {
             return width * length;
         }
+
+       
     }
 }
