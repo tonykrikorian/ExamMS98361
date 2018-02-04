@@ -35,14 +35,19 @@ namespace ExamMS98361.Console
             }
         }
 
-        public void ErrorEventHander(object sender, EventArgs e)
+        private void ErrorEventHander(object sender, EventArgs e)
         {
             CustomEvents r = (CustomEvents)sender;
 
             System.Console.WriteLine($"Valor {r.Name} es invalido");
         }
 
-        public void R_CustomChanges(object sender, EventArgs e)
+        /// <summary>
+        /// Maneja el Loggin de transacciones en base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void R_CustomChanges(object sender, EventArgs e)
         {
             CustomEvents custom = (CustomEvents)sender;
             System.Console.WriteLine($"El Valor Introducido es {(string.IsNullOrEmpty(custom.Name)? "Invalido":custom.Name)}");
