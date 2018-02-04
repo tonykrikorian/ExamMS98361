@@ -8,6 +8,8 @@ namespace ExamMS98361.Console
 {
     class Rectangle
     {
+        public event EventHandler Changed;
+
         private double width;
         private double length;
 
@@ -36,6 +38,7 @@ namespace ExamMS98361.Console
             {
                 if (value > 0.0)
                     length = value;
+                this.Changed(this, EventArgs.Empty);
             }
         }
 
