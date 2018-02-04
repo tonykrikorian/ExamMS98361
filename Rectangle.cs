@@ -11,11 +11,34 @@ namespace ExamMS98361.Console
         private double width;
         private double length;
 
-        public Rectangle(double w, double l)
+
+
+        public double Width
         {
-            this.width = w;
-            this.length = l;
+            get
+            {
+                return width;
+            }
+            set
+            {
+                if (value >0.0)
+                width = value;
+            }
         }
+
+        public double Length
+        {
+            get
+            {
+                return length;
+            }
+            set
+            {
+                if (value > 0.0)
+                    length = value;
+            }
+        }
+
         /// <summary>
         /// Calcula el area del rectangulo
         /// </summary>
