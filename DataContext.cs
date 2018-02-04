@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace ExamMS98361.Console
 {
-    public class DataContext:DbContext
+    public class DataContext : DbContext
     {
+        public DataContext() : base("DelegatesContext")
+        {
 
+        }
+        public DbSet<SystemLog> SystemLogs { get; set; }
     }
 }

@@ -28,7 +28,7 @@ namespace ExamMS98361.Console
                 }
                 else
                 {
-                    changes += ErrorEventHander;
+                    changes += R_CustomChanges;
                     changes(this, EventArgs.Empty);
                 }
                 
@@ -45,7 +45,19 @@ namespace ExamMS98361.Console
         public void R_CustomChanges(object sender, EventArgs e)
         {
             CustomEvents custom = (CustomEvents)sender;
-            System.Console.WriteLine($"El Valor Introducido es {custom.Name}");
+            System.Console.WriteLine($"El Valor Introducido es {(string.IsNullOrEmpty(custom.Name)? "Invalido":custom.Name)}");
+            using (var context = new DataContext())
+            {
+                SystemLog log = new SystemLog()
+                {
+                    Fecha = DateTime.Now,
+                     Value = ((string.IsNullOrEmpty(custom.Name))? "Error valor vacio" : custom.Name)
+                };
+
+                context.SystemLogs.Add(log);
+                context.SaveChanges();
+            }
+
         }
     }
 }
