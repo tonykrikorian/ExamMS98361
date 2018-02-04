@@ -16,7 +16,11 @@ namespace ExamMS98361.Console
             this.width = w;
             this.length = l;
         }
-
+        /// <summary>
+        /// Calcula el area del rectangulo
+        /// </summary>
+        /// <returns>Retorna un numero del tipo Double correspondiente 
+        /// al valor del area del rectangulo</returns>
         public double GetArea()
         {
             return width * length;
