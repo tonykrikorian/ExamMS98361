@@ -1,0 +1,7 @@
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\ExamMS98361.Console.exe.config
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\ExamMS98361.Console.exe
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\bin\Debug\ExamMS98361.Console.pdb
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.csprojResolveAssemblyReference.cache
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.csproj.CoreCompileInputs.cache
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.exe
+C:\Users\tonyk\source\repos\ExamMS98361\ExamMS98361.Console\obj\Debug\ExamMS98361.Console.pdb
