@@ -51,6 +51,7 @@ namespace ExamMS98361.Console
         {
             CustomEvents custom = (CustomEvents)sender;
             System.Console.WriteLine($"El Valor Introducido es {(string.IsNullOrEmpty(custom.Name)? "Invalido":custom.Name)}");
+
             using (var context = new DataContext())
             {
                 SystemLog log = new SystemLog()

@@ -24,6 +24,10 @@ namespace ExamMS98361.Console
 
             //events.changes += R_CustomChanges;
             events.Name = " ";
+            Point point = new Point();
+            point.X = 10;
+            point.Y = 20;
+            System.Console.WriteLine($"El resultado es {point.Multiplicity()}");
 
             System.Console.ReadLine();
 
@@ -34,6 +38,25 @@ namespace ExamMS98361.Console
         {
             Rectangle r = (Rectangle)sender;
             System.Console.WriteLine("Value Changed: Length = {0}",r.Length);
+        }
+
+        public struct Point
+        {
+            private double x;
+            private double y;
+
+            public double X { get => x; set => x = value; }
+            public double Y { get => y; set => y = value; }
+
+            public double GetSum()
+            {
+                return x + y;
+            }
+
+            public double Multiplicity()
+            {
+                return x * y;
+            }
         }
     }
 }
