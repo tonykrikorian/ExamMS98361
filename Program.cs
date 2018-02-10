@@ -28,9 +28,13 @@ namespace ExamMS98361.Console
             //point.X = 10;
             //point.Y = 20;
             //System.Console.WriteLine($"El resultado es {point.Multiplicity()}");
-            var rect = new Inheritance.Rectangle(12,4);
+            //var rect = new Inheritance.Rectangle(12,4);
+            //System.Console.WriteLine($"Width: {rect.Width} " +
+            //    $"Length: {rect.Length} area: {rect.GetArea()}");
+
+            var rect = new Abstractlass.Rectangle(12, 4);
             System.Console.WriteLine($"Width: {rect.Width} " +
-                $"Length: {rect.Length} area: {rect.GetArea()}");
+                $"Length: {rect.Length} Area: {rect.GetArea()}");
 
             System.Console.ReadLine();
 

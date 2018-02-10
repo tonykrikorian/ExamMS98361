@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstractlass\Polygon.cs" />
+    <Compile Include="Abstractlass\Rectangle.cs" />
     <Compile Include="CustomEvents.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="Inheritance\Rectangle.cs" />

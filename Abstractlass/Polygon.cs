@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamMS98361.Console.Inheritance
+namespace ExamMS98361.Console.Abstractlass
 {
-    class Polygon
+    abstract class Polygon
     {
         public double Length { get; protected set; }
 
         public double Width { get; protected set; }
+
+        abstract public double GetArea();
     }
 }
