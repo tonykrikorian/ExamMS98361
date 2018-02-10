@@ -11,7 +11,7 @@ namespace ExamMS98361.Console
     {
         static void Main(string[] args)
         {
-            Rectangle rect = new Rectangle();
+            //Rectangle rect = new Rectangle();
             CustomEvents events = new CustomEvents();
             //rect.Length = 10.0;
             //rect.Width = 12.0;
@@ -23,11 +23,14 @@ namespace ExamMS98361.Console
             //rect.Length = 12;
 
             //events.changes += R_CustomChanges;
-            events.Name = " ";
-            Point point = new Point();
-            point.X = 10;
-            point.Y = 20;
-            System.Console.WriteLine($"El resultado es {point.Multiplicity()}");
+            //events.Name = " ";
+            //Point point = new Point();
+            //point.X = 10;
+            //point.Y = 20;
+            //System.Console.WriteLine($"El resultado es {point.Multiplicity()}");
+            var rect = new Inheritance.Rectangle(12,4);
+            System.Console.WriteLine($"Width: {rect.Width} " +
+                $"Length: {rect.Length} area: {rect.GetArea()}");
 
             System.Console.ReadLine();
 
