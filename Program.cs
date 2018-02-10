@@ -32,13 +32,16 @@ namespace ExamMS98361.Console
             //System.Console.WriteLine($"Width: {rect.Width} " +
             //    $"Length: {rect.Length} area: {rect.GetArea()}");
 
-            var rect = new Abstractlass.Rectangle(12, 4);
-            System.Console.WriteLine($"Width: {rect.Width} " +
-                $"Length: {rect.Length} Area: {rect.GetArea()}");
+            //var rect = new Abstractlass.Rectangle(12, 4);
+            //System.Console.WriteLine($"Width: {rect.Width} " +
+            //    $"Length: {rect.Length} Area: {rect.GetArea()}");
+
+
+            var polygon = new Polymorphsym.PolygonLogic();
+
+            polygon.DrawPolygon();
 
             System.Console.ReadLine();
-
-
         }
 
         public static void R_Changed(object sender, EventArgs e)
